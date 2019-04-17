@@ -24,11 +24,14 @@ class ListingsController < ApplicationController
 
     def new 
         #shows form for creating a new listing
+        @listing = Listing.new
     end
 
     def show 
         # view a single listing
     end
+
+    private
 
     def set_listing
         id = params[:id]
